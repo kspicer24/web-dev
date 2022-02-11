@@ -81,13 +81,39 @@ hr.wd-light-gray-hr{
 
 .wd-tuit-image-container{
     margin-top: 12px;
-    border: 2px solid rgb(47, 51, 54);
+    width: 506px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .wd-tuit-image{
     height: 256px;
     width: 504px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.wd-tuit-image-caption{
+    font-size: 15px;
+    color: white;
+    padding: 12px;
+}
+
+.wd-tuit-metrics{
+    color: lightgray;
+    display: tablerow;
+}
+
+.wd-tuit-metric{
+    display: tablecell;
+    color: lightgray;
+}
+
+.wd-light-gray-color{
+    color: lightgray;
 }
 
