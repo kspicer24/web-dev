@@ -105,15 +105,28 @@ hr.wd-light-gray-hr{
 
 .wd-tuit-metrics{
     color: lightgray;
-    display: tablerow;
+    clear: both;
+    margin-top: 12px;
 }
 
 .wd-tuit-metric{
-    display: tablecell;
+    display: inline-block;
     color: lightgray;
+    width: 25%;
+    float: left
+}
+
+.wd-tuit-metric-img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 4px;
 }
 
 .wd-light-gray-color{
     color: lightgray;
 }
 
+.wd-liked-tuit{
+    color: red;
+}
