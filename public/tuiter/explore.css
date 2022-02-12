@@ -13,6 +13,12 @@ html{
     margin-left: 16px;
 }
 
+.wd-header{
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+}
+
 .wd-mag-image{
     background-image: url(https://icon-library.com/images/search-bar-magnifying-glass-icon/search-bar-magnifying-glass-icon-16.jpg);
     background-size: contain;
@@ -23,17 +29,15 @@ html{
 .wd-settings-style{
     width: 20px;
     float: right;
-    position: absolute;
-    right: 12px;
+    flex-basis: 100%;
+    margin-left: 12px;
 }
 
 .wd-search-bar{
     background-color: gray;
     color: white;
     border-radius: 30px;
-    float: left;
-    position: absolute;
-    left: 12px;
+    flex-basis: 100%;
 }
 
 .wd-tab-bar{
@@ -123,8 +127,4 @@ hr.wd-hr-selected{
 
 ::placeholder{
     color: white;
-}
-
-.wd-header{
-    height: 20px;
 }

@@ -1,0 +1,241 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+.rotate-image {
+    transform: rotate(-7deg);
+}
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(turquoise, lightsteelblue);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(lightgoldenrodyellow, lightcoral);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+        radial-gradient(at top center, wheat, plum);
+    width: 200px;
+    height: 200px;
+    color: black;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.animation-keyframes-custom {
+    position: relative;
+    animation-duration: 7s;
+    animation-name: spin-in;
+    width: 200px;
+    height: 50px;
+    background-color: gold;
+    color: white;
+}
+
+@keyframes spin-in {
+    from {
+        position: relative;
+        background-color: coral;
+        color: black;
+        margin-left: 100%
+        transform: rotate(0deg);
+    }
+
+    50% {
+        position: relative;
+        background-color: orange;
+        color: black;
+        margin-left: 50%
+    }
+
+    to {
+        position: relative;
+        background-color: gold;
+        color: black;
+        transform: rotate(360deg);
+        margin-left: 0%
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-container-end{
+    display: flex;
+    justify-content: end;
+}
+.flex-container-around{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container-align-start{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.flex-container-align-end{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.flex-container-align-center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-container-fill{
+    display: flex;
+}
+.flex-container-fill > .flex-box-fill{
+    flex-basis: 100%
+}
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: palegreen;
+    }
+    div {
+        background-color: paleturquoise;
+    }
+    h2, h3 {
+        background-color: thistle;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: limegreen;
+    }
+    div {
+        background-color: deepskyblue;
+    }
+    h2, h3 {
+        background-color: mediumorchid;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+    body {
+        background-color: darkgreen;
+        color: white
+    }
+    div {
+        background-color: midnightblue;
+        color: white;
+    }
+    h2, h3 {
+        background-color: indigo;
+        color: white;
+    }
+}

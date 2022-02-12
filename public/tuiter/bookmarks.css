@@ -116,6 +116,10 @@ hr.wd-light-gray-hr{
     float: left
 }
 
+.wd-no-underline{
+    text-decoration: none;
+}
+
 .wd-tuit-metric-img{
     height: 20px;
     width: 20px;
