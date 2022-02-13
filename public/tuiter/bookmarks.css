@@ -1,0 +1,136 @@
+html{
+    background-color: black;
+    font-family: Arial;
+}
+
+.wd-header{
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-large-white{
+    color: white;
+    font-size: 20px;
+}
+
+.wd-small-gray{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-12px-bottom-margin{
+    margin-bottom: 12px;
+}
+
+hr.wd-light-gray-hr{
+    border-top: 1px solid lightgray;
+}
+
+.wd-bookmarked-tuits{
+    display: table;
+    width: auto;
+    margin-top: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-color: rgb(47, 51, 54);
+    border-collapse: collapse;
+}
+
+.wd-bookmarked-tuit{
+    border: 2px solid rgb(47, 51, 54);
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 10px;
+    display: table-row;
+}
+
+.wd-user-image{
+    float:left;
+    margin-left: 16px;
+    margin-top: 12px;
+    border-radius: 30px;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+.wd-tuit-body{
+    display: inline-block;
+    margin: 12px;
+}
+
+.wd-tuit-header{
+    color: white;
+}
+
+.wd-tuit-content{
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    right-margin: 16px;
+}
+
+.wd-username{
+    font-size: 15px;
+    color: white
+}
+
+.wd-username .wd-user-handle{
+    color: lightgray;
+}
+
+.wd-tuit-image-container{
+    margin-top: 12px;
+    width: 506px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.wd-tuit-image{
+    height: 256px;
+    width: 504px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.wd-tuit-image-caption{
+    font-size: 15px;
+    color: white;
+    padding: 12px;
+}
+
+.wd-tuit-metrics{
+    color: lightgray;
+    clear: both;
+    margin-top: 12px;
+}
+
+.wd-tuit-metric{
+    display: inline-block;
+    color: lightgray;
+    width: 25%;
+    float: left
+}
+
+.wd-no-underline{
+    text-decoration: none;
+}
+
+.wd-tuit-metric-img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.wd-light-gray-color{
+    color: lightgray;
+}
+
+.wd-liked-tuit{
+    color: red;
+}
