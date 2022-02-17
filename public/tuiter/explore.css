@@ -5,7 +5,7 @@
     background-color: white;
 }
 .wd-green{
-    background-color: mediumseagreen;
+    background-color: white;
 }
 .wd-navigation-bar{
     display: table;
@@ -73,19 +73,55 @@
     padding: 8px;
     border-top: 1px solid lightgray;
     display: flex;
-    align-items: center;
+    align-items: top;
+    justify-content: space-between;
 }
 .wd-tuit-content > .wd-tuit-detail{
     color: darkgray;
 }
 .wd-tuit-content{
-    float: left;
 }
 .wd-tuit-image{
-    height: 60px;
-    float: right;
+    height: 70px;
     diplay: flex;
 }
 .wd-tuit-user{
     font-size: 14px;
+}
+.wd-wtf-bar{
+    margin-top: 12px;
+    color: darkslategray;
+    font-size: 14px;
+}
+.wd-wtf-item{
+    border: 1px solid lightgray;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+}
+.wd-wtf-image{
+    height: auto;
+    width: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    top:25%;
+    transform: translateY(-25%);
+}
+.wd-wtf-user{
+
+}
+.wd-wtf-follow{
+    background-color: rgb(29,161,242);
+    color: white;
+    border-radius: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+}
+.wd-wtf-user-info{
+    display: inline-block;
 }
