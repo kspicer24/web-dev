@@ -9,61 +9,73 @@
 </head>
 <body>
     <div class="container">
-        <div class="row wd-main-content">
-            <div class="col-2 wd-red wd-navigation-bar container">
-                <div class="wd-navigation-item">
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-home"></i> House
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-hashtag"></i>  Explore
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-bell"></i>  Notifications
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-envelope"></i>  Messages
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-bookmark"></i>  Bookmarks
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-list"></i>  Lists
-                </div>
-                <div class="wd-navigation-item">
-                    <i class="fa fa-user"></i>  Profile
-                </div>
-                <div class="wd-navigation-item">
-                    <span class="fa-stack fa-1x wd-stacked-icons-small">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-ellipsis-h fa-stack-1x" style="color: white"></i>
-                    </span>
-                    More
+        <div class="row flex-nowrap wd-main-content">
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-2 col-xxl-2 wd-navigation-bar">
+                <div class="list-group wd-bottom-margin wd-no-wrap-text">
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="home.html" class="list-group-item wd-navigation-item d-flex">
+                        <i class="fa fa-home"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Home</span>
+                    </a>
+                    <a href="explore.html" class="list-group-item active wd-navigation-item d-flex wd-blue-bg">
+                        <i class="fa fa-hashtag"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Explore</span>
+                    </a>
+                    <a href="notifications.html" class="list-group-item wd-navigation-item">
+                        <i class="fa fa-bell"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Notifications</span>
+                    </a>
+                    <a href="messages.html" class="list-group-item wd-navigation-item">
+                        <i class="fa fa-envelope"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Messages</span>
+                    </a>
+                    <a href="bookmarks.html" class="list-group-item wd-navigation-item">
+                        <i class="fa fa-bookmark"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Bookmarks</span>
+                    </a>
+                    <a href="lists.html" class="list-group-item wd-navigation-item">
+                        <i class="fa fa-list"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Lists</span>
+                    </a>
+                    <a href="profile.html" class="list-group-item wd-navigation-item">
+                        <i class="fa fa-user"></i>
+                        <span class="d-none d-xl-block wd-nav-title">Profile</span>
+                    </a>
+                    <a href="more.html" class="list-group-item wd-navigation-item">
+                        <span class="fa-stack fa-1x wd-stacked-icons-small">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x" style="color: white"></i>
+                        </span>
+                        <span class="d-none d-xl-block wd-nav-title">More</span>
+                    </a>
                 </div>
                 <button class="btn wd-tuit-button">Tweet</button>
             </div>
-            <div class="col-6 wd-blue container">
+            <div class="col-sm-11 col-md-11 col-lg-7 col-xl-6 col-xxl-6">
                 <div class="wd-header">
-                    <input class="wd-search-bar" type="text" placeholder="Search Twitter"/>
+                    <div class="wd-search-area">
+                        <i class="fas fa-search wd-mag-image"></i>
+                        <input class="wd-search-bar" type="text" placeholder="Search Twitter"/>
+                    </div>
                     <i class="fa fa-cog wd-settings-icon"></i>
                 </div>
-                <ul class="nav nav-tabs wd-main-tabs">
+                <ul class="nav nav-tabs flex-nowrap wd-main-tabs wd-text-no-wrap">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">For You</a>
+                        <a class="nav-link active wd-lightgray" href="#">For you</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trending</a>
+                        <a class="nav-link wd-blue-fg" href="#">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link wd-blue-fg" href="#">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sports</a>
+                        <a class="nav-link wd-blue-fg" href="#">Sports</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Entertainment</a>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link wd-blue-fg" href="#">Entertainment</a>
                     </li>
                 </ul>
                 <div class="wd-main-tuits">
@@ -120,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 wd-green container wd-wtf-bar">
+            <div class="d-none d-lg-block hidden-md hidden-sm col-lg-4 col-xl-4 col-xxl-4 wd-wtf-bar">
                 <div class="wd-wtf-item">
                     <b>Who to follow</b>
                 </div>
