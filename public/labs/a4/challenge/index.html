@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../vendors/fontawesome/css/all.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body class="wd-black-bg">
+<div class="container">
+    <div class="row flex-nowrap wd-main-content">
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-2 col-xxl-2 wd-navigation-bar">
+            <div class="list-group wd-bottom-margin wd-no-wrap-text">
+                <a href="#" class="list-group-item wd-navigation-item">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="home.html" class="list-group-item wd-navigation-item d-flex">
+                    <i class="fa fa-home"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Home</span>
+                </a>
+                <a href="explore.html" class="list-group-item active wd-navigation-item d-flex wd-blue-bg">
+                    <i class="fa fa-hashtag"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Explore</span>
+                </a>
+                <a href="notifications.html" class="list-group-item wd-navigation-item">
+                    <i class="fa fa-bell"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Notifications</span>
+                </a>
+                <a href="messages.html" class="list-group-item wd-navigation-item">
+                    <i class="fa fa-envelope"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Messages</span>
+                </a>
+                <a href="bookmarks.html" class="list-group-item wd-navigation-item">
+                    <i class="fa fa-bookmark"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Bookmarks</span>
+                </a>
+                <a href="lists.html" class="list-group-item wd-navigation-item">
+                    <i class="fa fa-list"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Lists</span>
+                </a>
+                <a href="profile.html" class="list-group-item wd-navigation-item">
+                    <i class="fa fa-user"></i>
+                    <span class="d-none d-xl-block wd-nav-title">Profile</span>
+                </a>
+                <a href="more.html" class="list-group-item wd-navigation-item">
+                        <span class="fa-stack fa-1x wd-stacked-icons-small">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x" style="color: black"></i>
+                        </span>
+                    <span class="d-none d-xl-block wd-nav-title">More</span>
+                </a>
+            </div>
+            <button class="btn wd-tuit-button">Tweet</button>
+        </div>
+        <div class="col-sm-11 col-md-11 col-lg-7 col-xl-6 col-xxl-6">
+            <div class="wd-header">
+                <div class="wd-search-area">
+                    <i class="fas fa-search wd-mag-image"></i>
+                    <input class="wd-search-bar" type="text" placeholder="Search Twitter"/>
+                </div>
+                <a href="settings.html"><i class="fa fa-cog wd-settings-icon"></i></a>
+            </div>
+            <ul class="nav flex-nowrap wd-main-tabs wd-text-no-wrap">
+                <li class="nav-item">
+                    <a class="nav-link active wd-active-tab" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-tab" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-tab" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-tab" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link wd-tab" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="wd-main-tuits">
+                <img
+                        src="data:image/jpeg;base64,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"
+                        class="wd-main-tuits-image"/> <br/>
+                <span class="wd-main-image-text"><b>SpaceX's Starship</b></span>
+
+                <div class="wd-tuit">
+                    <div class="wd-tuit-content">
+                        <span class="wd-tuit-detail">Web Development</span><br/>
+                        <span class="wd-tuit-user"><b>ReactJS</b></span>
+                        <i class="fas fa-check-circle"></i>
+                        <span class="wd-tuit-detail"> - 2h</span><br/>
+                        <span><b>React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</b></span>
+                    </div>
+                    <img
+                            src="https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png"
+                            class="wd-tuit-image"/>
+                </div>
+                <div class="wd-tuit">
+                    <div class="wd-tuit-content">
+                        <span class="wd-tuit-user"><b>JavaScript</b></span>
+                        <i class="fas fa-check-circle"></i>
+                        <span class="wd-tuit-detail"> - 2h</span><br/>
+                        <span><b>JavaScript is a programming language that can run on browsers as well as desktops</b></span><br/>
+                        <span class="wd-tuit-detail">123K Tweets</span>
+                    </div>
+                    <img
+                            src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png"
+                            class="wd-tuit-image"/>
+                </div>
+                <div class="wd-tuit">
+                    <div class="wd-tuit-content">
+                        <span class="wd-tuit-detail">Web Development</span><br/>
+                        <span class="wd-tuit-user"><b>jQuery</b></span><br/>
+                        <span class="wd-tuit-detail">123K Tweets</span>
+                    </div>
+                    <img
+                            src="data:image/png;base64,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"
+                            class="wd-tuit-image"/>
+                </div>
+                <div class="wd-tuit">
+                    <div class="wd-tuit-content">
+                        <span class="wd-tuit-detail">Web Development</span><br/>
+                        <span class="wd-tuit-user"><b>NodeJS</b></span>
+                        <i class="fas fa-check-circle"></i>
+                        <span class="wd-tuit-detail"> - 2h</span><br/>
+                        <span class="wd-tuit-detail">123K Tweets</span>
+                    </div>
+                    <img
+                            src="https://media.istockphoto.com/vectors/nodejs-vector-logo-backend-programming-in-javascript-server-vector-id1195857274?k=20&m=1195857274&s=170667a&w=0&h=k8oHsv3ehrvhviozLlvhEjGHweiHU7hbBv7bHEkgUqc="
+                            class="wd-tuit-image"/>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block hidden-md hidden-sm col-lg-4 col-xl-4 col-xxl-4">
+            <div class="list-group wd-wtf-bar">
+            <div class="wd-wtf-item">
+                <b>Who to follow</b>
+            </div>
+            <div class="wd-wtf-item">
+                <div class="wd-wtf-user">
+                    <img
+                            src="https://www.shareicon.net/data/512x512/2016/09/23/833700_windows_512x512.png"
+                            class="wd-wtf-image"/>
+                    <div class="wd-wtf-user-info">
+                        <span><b>Java</b></span>
+                        <i class="fas fa-check-circle"></i> <br/>
+                        <span class="wd-detail">@Java</span>
+
+                    </div>
+                </div>
+                <button class="btn wd-wtf-follow">Follow</button>
+            </div>
+            <div class="wd-wtf-item">
+                <div class="wd-wtf-user">
+                    <img
+                            src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+                            class="wd-wtf-image"/>
+                    <div class="wd-wtf-user-info">
+                        <span><b>Relativity Space</b></span>
+                        <i class="fas fa-check-circle"></i> <br/>
+                        <span class="wd-detail">@relativityspace</span>
+
+                    </div>
+                </div>
+                <button class="btn wd-wtf-follow">Follow</button>
+            </div>
+            <div class="wd-wtf-item">
+                <div class="wd-wtf-user">
+                    <img
+                            src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"
+                            class="wd-wtf-image"/>
+                    <div class="wd-wtf-user-info">
+                        <span><b>Virgin Galactic</b></span>
+                        <i class="fas fa-check-circle"></i> <br/>
+                        <span class="wd-detail">@virgingalactic</span>
+
+                    </div>
+                </div>
+                <button class="btn wd-wtf-follow">Follow</button>
+            </div>
+            <div class="wd-wtf-item">
+                <div class="wd-wtf-user">
+                    <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+                            class="wd-wtf-image"/>
+                    <div class="wd-wtf-user-info">
+                        <span><b>NASA</b></span>
+                        <i class="fas fa-check-circle"></i> <br/>
+                        <span class="wd-detail">@NASA</span>
+
+                    </div>
+                </div>
+                <button class="btn wd-wtf-follow">Follow</button>
+            </div>
+            <div class="wd-wtf-item">
+                <div class="wd-wtf-user">
+                    <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png"
+                            class="wd-wtf-image"/>
+                    <div class="wd-wtf-user-info">
+                        <span><b>Tesla</b></span>
+                        <i class="fas fa-check-circle"></i> <br/>
+                        <span class="wd-detail">@Tesla</span>
+
+                    </div>
+                </div>
+                <button class="btn wd-wtf-follow">Follow</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
