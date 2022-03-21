@@ -1,0 +1,252 @@
+.wd-main-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.wd-flex{
+    display: flex;
+}
+.wd-blue-bg{
+    background-color: rgb(29,161,242) !important;
+}
+.wd-blue-fg{
+    color: rgb(29,161,242) !important;
+}
+.wd-no-wrap-text{
+    white-space: nowrap;
+}
+.wd-lightgray{
+    color: lightslategray !important;
+}
+.wd-navigation-bar{
+    display: table;
+    margin-top: 12px;
+    color: darkslategray;
+}
+.wd-bottom-margin{
+    margin-bottom:  4px;
+}
+.wd-navigation-item{
+    border: 1px solid black;
+    padding: 8px 8px 8px 12px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+}
+.wd-nav-title{
+    margin-left: 6px;
+}
+.wd-tuit-button{
+    background-color: rgb(29,161,242);
+    border-radius: 50px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.wd-header{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+.wd-search-area{
+    flex-basis: 100%;
+    display: flex;
+}
+.wd-search-bar{
+    padding-left: 30px;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    flex-basis: 100%;
+}
+.wd-mag-image{
+    position: relative;
+    left: 25px;
+    top: 6px;
+    margin-left: -20px;
+    color: lightslategray;
+}
+.wd-main-tabs{
+    margin-top: 12px;
+    font-size: 16px;
+}
+.wd-settings-icon{
+    color: rgb(29,161,242);
+    margin-left: 12px;
+    font-size: 2.0em;
+}
+.wd-stacked-icons-small{
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+.wd-main-tuits{
+    display: table;
+    width: 100%;
+    margin-top: 12px;
+}
+.wd-main-tuits-image{
+    width: 100%;
+    margin-bottom: -40px;
+    border-radius: 5px;
+}
+.wd-main-image-text{
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+.wd-tuit-summary{
+    color: darkgray;
+    font-size: 13px;
+    margin-top: 0px;
+    padding: 8px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(16, 16, 16);
+
+}
+.wd-tuit-content-summary > .wd-tuit-detail{
+    color: dimgray;
+}
+.wd-tuit-content-summary{
+}
+.wd-tuit-image-summary{
+    height: 70px;
+    display: flex;
+    border-radius: 10px;
+}
+.wd-tuit-user{
+    font-size: 14px;
+}
+html{
+    background-color: black;
+    font-family: Arial, serif;
+}
+
+.wd-header{
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-large-white{
+    color: white;
+    font-size: 20px;
+}
+
+.wd-small-gray{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-12px-bottom-margin{
+    margin-bottom: 12px;
+}
+
+hr.wd-light-gray-hr{
+    border-top: 1px solid lightgray;
+}
+
+.wd-bookmarked-tuits{
+    display: table;
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.wd-bookmarked-tuit{
+    border-top: 2px solid black;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(16, 16, 16);
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 10px;
+    display: flex;
+}
+
+.wd-user-image{
+    float:left;
+    margin-left: 16px;
+    margin-top: 12px;
+    border-radius: 30px;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+.wd-tuit-body{
+    display: inline-block;
+    margin: 12px;
+}
+
+.wd-tuit-header{
+    color: silver;
+}
+
+.wd-tuit-content{
+    color: silver;
+    font-size: 15px;
+}
+
+.wd-username{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-detail{
+    color: dimgray;
+}
+
+.wd-silver{
+    color: silver !important;
+}
+
+.wd-username .wd-user-handle{
+    color: dimgray;
+}
+
+.wd-tuit-image-container{
+    margin-top: 12px;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 20px;
+}
+
+.wd-tuit-image{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.wd-tuit-image-caption{
+    font-size: 15px;
+    color: white;
+    padding: 12px;
+}
+
+.wd-tuit-metrics{
+    color: lightgray;
+    clear: both;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.wd-tuit-metric{
+    display: flex;
+    color: lightgray;
+}
+
+.wd-no-underline{
+    text-decoration: none;
+}
+.wd-light-gray-color{
+    color: lightgray;
+}
+
+.wd-liked-tuit{
+    color: red;
+}

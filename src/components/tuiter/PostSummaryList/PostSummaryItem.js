@@ -14,12 +14,20 @@ const PostSummaryItem = (
         <>
             <div className={`wd-tuit-summary`}>
                 <div className={`wd-tuit-content-summary`}>
-                    <span className={`wd-tuit-detail`}>{post.topic}</span><br/>
-                    <span className={`wd-tuit-user`}><b>{post.userName}</b></span>
+                    { post.topic &&
+                        <span className={`wd-tuit-detail`}>{post.topic}<br/></span>
+                    }
+                    {post.userName &&
+                        <span className={`wd-tuit-user`}><b>{post.userName}</b></span>
+                    }
                     <i className={`fas fa-check-circle`}/>
                     <span className={`wd-tuit-detail`}>{` - ${post.time}`}</span><br/>
-                    <span><b>{post.title}</b></span><br/>
-                    <span className={`wd-tuit-detail`}>{post.tweets}</span>
+                    {post.title &&
+                        <span><b>{post.title}</b><br/></span>
+                    }
+                    {post.tweets &&
+                        <span className={`wd-tuit-detail`}>{post.tweets}</span>
+                    }
                 </div>
                 <img
                     src={post.image}

@@ -16,7 +16,7 @@ const WhoToFollowListItem = ({
                         className={`wd-wtf-image`}/>
                     <div className={`wd-wtf-user-info`}>
                         <span><b>{who.userName}</b></span>
-                        <i className={`fas fa-check-circle wd-wtf-check`}/><br/>
+                        <i className={`fas fa-check-circle wd-check`}/><br/>
                         <span>{`@${who.handle}`}</span>
                     </div>
                 </div>

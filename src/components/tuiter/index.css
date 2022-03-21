@@ -1,0 +1,177 @@
+body{
+    background-color: black;
+}
+.wd-main-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.wd-flex{
+    display: flex;
+}
+.wd-blue-bg{
+    background-color: rgb(29,161,242) !important;
+}
+.wd-blue-fg{
+    color: rgb(29,161,242) !important;
+}
+.wd-no-wrap-text{
+    white-space: nowrap;
+}
+.wd-navigation-bar{
+    display: table;
+    margin-top: 12px;
+}
+.wd-bottom-margin{
+    margin-bottom:  4px;
+}
+.wd-navigation-item{
+    border: 1px solid black;
+    padding: 8px 8px 8px 12px;
+    display: flex;
+    color: silver;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+}
+.list-group > .active{
+    background-color: rgb(29, 161, 242) !important;
+}
+.wd-nav-title{
+    margin-left: 6px;
+}
+.wd-tuit-button{
+    background-color: rgb(29,161,242) !important;
+    border-radius: 50px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.wd-header{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+.wd-search-area{
+    flex-basis: 100%;
+    display: flex;
+}
+.wd-search-bar{
+    padding-left: 30px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    flex-basis: 100%;
+    background-color: whitesmoke;
+}
+::placeholder{
+    color: rgb(27, 27, 27);
+}
+.wd-mag-image{
+    position: relative;
+    left: 25px;
+    top: 6px;
+    margin-left: -20px;
+    color: rgb(27, 27, 27);
+}
+.wd-main-tabs{
+    margin-top: 12px;
+    font-size: 16px;
+    border: none !important;
+}
+.nav-item > .nav-link{
+    color: rgb(29, 161, 242) !important;
+}
+.nav-item > .active{
+    color: white !important;
+    background-color: rgb(29, 161, 242) !important;
+    border: none;
+}
+.wd-settings-icon{
+    color: rgb(29,161,242);
+    margin-left: 12px;
+    font-size: 2.0em;
+}
+.wd-stacked-icons-small{
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+.wd-main-tuits{
+    display: table;
+    width: 100%;
+    margin-top: 12px;
+}
+.wd-main-tuits-image{
+    width: 100%;
+    margin-bottom: -40px;
+    border-radius: 5px;
+}
+.wd-main-image-text{
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+.wd-tuit-summary{
+    color: darkgray;
+    font-size: 13px;
+    margin-top: 0px;
+    padding: 8px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(16, 16, 16);
+
+}
+.wd-tuit-content > .wd-tuit-detail{
+    color: dimgray;
+}
+.wd-tuit-content{
+}
+.wd-tuit-image-summary{
+    height: 70px;
+    diplay: flex;
+    border-radius: 10px;
+}
+.wd-tuit-user{
+    font-size: 14px;
+}
+.wd-wtf-bar{
+    font-size: 14px;
+}
+.wd-wtf-item{
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(16, 16, 16);
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6px 6px 12px;
+}
+.wd-wtf-image{
+    height: auto;
+    width: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    top:25%;
+    transform: translateY(-25%);
+}
+.wd-wtf-user{
+    white-space: nowrap;
+}
+.wd-wtf-follow{
+    background-color: rgb(29,161,242);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+}
+.wd-wtf-user-info{
+    display: inline-block;
+    color: silver;
+    margin-left: 8px;
+}
+.wd-check{
+    margin-left: 8px;
+}

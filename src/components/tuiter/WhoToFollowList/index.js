@@ -1,6 +1,7 @@
 import React from "react";
 import who from "./who.json";
 import WhoToFollowListItem from "./WhoToFollowListItem";
+import "../index.css";
 
 const WhoToFollowList = () => {
     return(
