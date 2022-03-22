@@ -12,26 +12,26 @@ const PostSummaryItem = (
     }) => {
     return(
         <>
-            <div className={`wd-tuit-summary`}>
+            <div className={`wd-tweet-summary`}>
                 <div className={`wd-tuit-content-summary`}>
                     { post.topic &&
-                        <span className={`wd-tuit-detail`}>{post.topic}<br/></span>
+                        <span className={`wd-tweet-details`}>{post.topic}<br/></span>
                     }
                     {post.userName &&
-                        <span className={`wd-tuit-user`}><b>{post.userName}</b></span>
+                        <span className={`wd-tweet-user-info`}><b>{post.userName}</b></span>
                     }
                     <i className={`fas fa-check-circle`}/>
-                    <span className={`wd-tuit-detail`}>{` - ${post.time}`}</span><br/>
+                    <span className={`wd-tweet-details`}>{` - ${post.time}`}</span><br/>
                     {post.title &&
                         <span><b>{post.title}</b><br/></span>
                     }
                     {post.tweets &&
-                        <span className={`wd-tuit-detail`}>{post.tweets}</span>
+                        <span className={`wd-tweet-details`}>{post.tweets}</span>
                     }
                 </div>
                 <img
                     src={post.image}
-                    className={`wd-tuit-image-summary`}/>
+                    className={`wd-tweet-image-summary`}/>
             </div>
         </>
     );

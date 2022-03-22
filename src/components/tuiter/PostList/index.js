@@ -4,7 +4,7 @@ import PostItem from "./PostItem";
 
 const PostList = () => {
     return(
-        <div className={'wd-bookmarked-tuits wd-flex'}>
+        <div className={'wd-bookmarked-tweets wd-flex'}>
             {post.map(post =>
                 <PostItem post={post}/>
             )}

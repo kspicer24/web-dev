@@ -35,7 +35,7 @@
 .wd-nav-title{
     margin-left: 6px;
 }
-.wd-tuit-button{
+.wd-tweet-button{
     background-color: rgb(29,161,242);
     border-radius: 50px;
     width: 100%;
@@ -57,23 +57,23 @@
     border: 1px solid lightgray;
     flex-basis: 100%;
 }
-.wd-mag-image{
+.wd-magnifying-glass{
     position: relative;
     left: 25px;
     top: 6px;
     margin-left: -20px;
     color: lightslategray;
 }
-.wd-main-tabs{
+.wd-main-section-tabs{
     margin-top: 12px;
     font-size: 16px;
 }
-.wd-settings-icon{
+.wd-settings{
     color: rgb(29,161,242);
     margin-left: 12px;
     font-size: 2.0em;
 }
-.wd-stacked-icons-small{
+.wd-stacked-icons{
     font-size: 0.5em;
     vertical-align: middle;
 }
@@ -82,7 +82,7 @@
     width: 100%;
     margin-top: 12px;
 }
-.wd-main-tuits-image{
+.wd-main-image{
     width: 100%;
     margin-bottom: -40px;
     border-radius: 5px;
@@ -92,7 +92,7 @@
     font-size: 24px;
     margin-left: 12px;
 }
-.wd-tuit-summary{
+.wd-tweet-summary{
     color: darkgray;
     font-size: 13px;
     margin-top: 0px;
@@ -105,17 +105,17 @@
     background-color: rgb(16, 16, 16);
 
 }
-.wd-tuit-content-summary > .wd-tuit-detail{
+.wd-tuit-content-summary > .wd-tweet-details{
     color: dimgray;
 }
 .wd-tuit-content-summary{
 }
-.wd-tuit-image-summary{
+.wd-tweet-image-summary{
     height: 70px;
     display: flex;
     border-radius: 10px;
 }
-.wd-tuit-user{
+.wd-tweet-user-info{
     font-size: 14px;
 }
 html{
@@ -146,7 +146,7 @@ hr.wd-light-gray-hr{
     border-top: 1px solid lightgray;
 }
 
-.wd-bookmarked-tuits{
+.wd-bookmarked-tweets{
     display: table;
     width: 100%;
     margin-top: 12px;
@@ -154,7 +154,7 @@ hr.wd-light-gray-hr{
     border-color: black;
 }
 
-.wd-bookmarked-tuit{
+.wd-bookmarked-tweets{
     border-top: 2px solid black;
     width: 100%;
     border-radius: 10px;
@@ -175,16 +175,16 @@ hr.wd-light-gray-hr{
     display: inline-block;
 }
 
-.wd-tuit-body{
+.wd-tweet-body{
     display: inline-block;
     margin: 12px;
 }
 
-.wd-tuit-header{
+.wd-tweet-header{
     color: silver;
 }
 
-.wd-tuit-content{
+.wd-tweet-content{
     color: silver;
     font-size: 15px;
 }
@@ -206,13 +206,13 @@ hr.wd-light-gray-hr{
     color: dimgray;
 }
 
-.wd-tuit-image-container{
+.wd-tweet-image-container{
     margin-top: 12px;
     border: 1px solid rgb(27, 27, 27);
     border-radius: 20px;
 }
 
-.wd-tuit-image{
+.wd-tweet-image{
     width: 100%;
     height: auto;
     border-bottom: 1px solid rgb(27, 27, 27);
@@ -220,13 +220,13 @@ hr.wd-light-gray-hr{
     border-top-left-radius: 10px;
 }
 
-.wd-tuit-image-caption{
+.wd-tweet-image-caption{
     font-size: 15px;
     color: white;
     padding: 12px;
 }
 
-.wd-tuit-metrics{
+.wd-tweet-metrics{
     color: lightgray;
     clear: both;
     margin-top: 12px;
@@ -235,7 +235,7 @@ hr.wd-light-gray-hr{
     padding-left: 10px;
 }
 
-.wd-tuit-metric{
+.wd-tweet-metric{
     display: flex;
     color: lightgray;
 }
@@ -247,6 +247,6 @@ hr.wd-light-gray-hr{
     color: lightgray;
 }
 
-.wd-liked-tuit{
+.wd-liked-tweet{
     color: red;
 }

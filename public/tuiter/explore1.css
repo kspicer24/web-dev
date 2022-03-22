@@ -19,7 +19,7 @@ html{
     justify-content: space-between;
 }
 
-.wd-mag-image{
+.wd-magnifying-glass{
     background-image: url(https://icon-library.com/images/search-bar-magnifying-glass-icon/search-bar-magnifying-glass-icon-16.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,12 +74,12 @@ hr.wd-hr-selected{
     color: white;
 }
 
-.wd-tuit-content{
+.wd-tweet-content{
     float: left;
     margin: 16px;
 }
 
-.wd-tuit-image{
+.wd-tweet-image{
     float: right;
     margin: 16px;
     height: 100px;

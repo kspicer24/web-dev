@@ -11,13 +11,9 @@ import HomeScreen from "./components/tuiter/HomeScreen";
 function App() {
   return (
       <BrowserRouter>
-          <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
-          <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
-
           <Route exact path="/">
-              <Redirect to="/labs"/>
+              <Redirect to="/labs" />
           </Route>
-
           <div className="container">
               <Route path={["/", "/hello"]} exact={true}>
                   <HelloWorld/>
@@ -25,9 +21,13 @@ function App() {
               <Route path={["/", "/labs"]} exact={true}>
                   <Labs/>
               </Route>
-              <Route path={["/", "/tuiter"]}>
-                  <Tuiter/>
+              <Route path={["/", "/tuiter/explore"]} exact={true}>
+                  <ExploreScreen/>
               </Route>
+              <Route path={["/tuiter/home"]} exact={true}>
+                  <HomeScreen/>
+              </Route>
+
           </div>
       </BrowserRouter>
   );

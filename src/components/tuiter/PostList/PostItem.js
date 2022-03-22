@@ -19,17 +19,17 @@ const TuitImageCaption = (
     }) => {
     return(
         <>
-            <div className="wd-tuit-image-caption">
+            <div className="wd-tweet-image-caption">
                 {post.imageTitle &&
-                    <span><b>${post.imageTitle}</b><br/></span>
+                    <span><b>{post.imageTitle}</b><br/></span>
                 }
                 {post.imageBody &&
-                    <span className="wd-light-gray-color">${post.imageBody}<br/></span>
+                    <span className="wd-light-gray-color">{post.imageBody}<br/></span>
                 }
                 {post.imageLink &&
                     <>
                         <i className="wd-detail fa fa-link"/>
-                        <span className="wd-detail">${post.imageLink}</span>
+                        <span className="wd-detail">{post.imageLink}</span>
                     </>
                 }
             </div>
@@ -55,10 +55,10 @@ const TuitImageComponent = (
         }
     }) => {
     return(
-        <div className="wd-tuit-image-container">
+        <div className="wd-tweet-image-container">
             <img
                 src={post.image}
-                className="wd-tuit-image"/>
+                className="wd-tweet-image"/>
             {(post.imageBody || post.imageTitle || post.imageLink) &&
                 <TuitImageCaption post={post}/>
             }
@@ -85,47 +85,47 @@ const PostItem = (
     }) => {
     return(
         <>
-            <div className="wd-bookmarked-tuit">
+            <div className="wd-bookmarked-tweets">
                 <img
                     src={post.userPhoto}
                     className="wd-user-image"/>
-                <div className="wd-tuit-body">
-                    <div className="wd-tuit-header">
+                <div className="wd-tweet-body">
+                    <div className="wd-tweet-header">
                 <span className="wd-username">
-                    <span>${post.userName}</span>
-                    <span className="fa-stack fa-1x wd-stacked-icons-small">
+                    <span>{post.userName}</span>
+                    <span className="fa-stack fa-1x wd-stacked-icons">
                         <i className="fas fa-certificate fa-stack-2x"/>
                         <i className="fas fa-check fa-stack-1x" style={{color: "black"}}/>
                     </span>
-                    <span className="wd-user-handle">${post.handle}</span>
+                    <span className="wd-user-handle">{post.handle}</span>
                 </span>
                     </div>
-                    <div className="wd-tuit-content">
-                        ${post.body}
+                    <div className="wd-tweet-content">
+                        {post.body}
                     </div>
                     {post.image &&
                         <TuitImageComponent post={post}/>
                     }
-                    <div className="wd-tuit-metrics">
-                        <div className="wd-tuit-metric">
+                    <div className="wd-tweet-metrics">
+                        <div className="wd-tweet-metric">
                             <a href="#" className="wd-no-underline">
                                 <i className="fa fa-comment wd-silver"/>
-                                <span className="wd-light-gray-color">${post.comments}</span>
+                                <span className="wd-light-gray-color">{post.comments}</span>
                             </a>
                         </div>
-                        <div className="wd-tuit-metric">
+                        <div className="wd-tweet-metric">
                             <a href="#" className="wd-no-underline">
                                 <i className="fa fa-retweet wd-silver"/>
-                                <span className="wd-light-gray-color">${post.retweets}</span>
+                                <span className="wd-light-gray-color">{post.retweets}</span>
                             </a>
                         </div>
-                        <div className="wd-tuit-metric">
+                        <div className="wd-tweet-metric">
                             <a href="#" className="wd-no-underline">
                                 <i className="fas fa-heart" style={{color: "red"}}/>
-                                <span className="wd-light-gray-color">${post.likes}</span>
+                                <span className="wd-light-gray-color">{post.likes}</span>
                             </a>
                         </div>
-                        <div className="wd-tuit-metric">
+                        <div className="wd-tweet-metric">
                             <a href="#" className="wd-no-underline wd-silver">
                                 <i className="fa fa-share"/>
                             </a>

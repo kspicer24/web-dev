@@ -34,7 +34,7 @@
 .wd-nav-title{
     margin-left: 6px;
 }
-.wd-tuit-button{
+.wd-tweet-button{
     background-color: rgb(29,161,242);
     border-radius: 50px;
     width: 100%;
@@ -57,14 +57,14 @@
     flex-basis: 100%;
     background-color: rgb(33, 35, 39);
 }
-.wd-mag-image{
+.wd-magnifying-glass{
     position: relative;
     left: 25px;
     top: 6px;
     margin-left: -20px;
     color: darkgray;
 }
-.wd-main-tabs{
+.wd-main-section-tabs{
     margin-top: 12px;
     font-size: 16px;
 }
@@ -77,12 +77,12 @@
     border-bottom: 2px solid rgb(29,161,242);
     font-weight: 700;
 }
-.wd-settings-icon{
+.wd-settings{
     color: darkgray;
     margin-left: 12px;
     font-size: 2.0em;
 }
-.wd-stacked-icons-small{
+.wd-stacked-icons{
     font-size: 0.5em;
     vertical-align: middle;
 }
@@ -92,7 +92,7 @@
     width: 100%;
     margin-top: 12px;
 }
-.wd-main-tuits-image{
+.wd-main-image{
     width: 100%;
     margin-bottom: -40px;
 }
@@ -110,18 +110,18 @@
     align-items: top;
     justify-content: space-between;
 }
-.wd-tuit-content > .wd-tuit-detail{
+.wd-tweet-content > .wd-tweet-details{
     color: darkgray;
     font-weight: 500;
 }
-.wd-tuit-image{
+.wd-tweet-image{
     height: 70px;
     diplay: flex;
 }
-.wd-tuit-user{
+.wd-tweet-user-info{
     font-size: 14px;
 }
-.wd-wtf-bar{
+.wd-wtf-section{
     margin-top: 12px;
     color: silver;
     font-size: 14px;
@@ -138,7 +138,7 @@
 .wd-wtf-user-info > .wd-detail{
     color: darkgray;
 }
-.wd-wtf-image{
+.wd-wtf-avatar{
     height: auto;
     width: 40px;
     border-radius: 30px;
@@ -147,7 +147,7 @@
     top:25%;
     transform: translateY(-25%);
 }
-.wd-wtf-follow{
+.wd-wtf-follow-button{
     background-color: silver;
     color: black;
     border-radius: 30px;

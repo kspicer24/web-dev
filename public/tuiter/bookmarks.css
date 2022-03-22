@@ -26,7 +26,7 @@ hr.wd-light-gray-hr{
     border-top: 1px solid lightgray;
 }
 
-.wd-bookmarked-tuits{
+.wd-bookmarked-tweets{
     display: table;
     width: auto;
     margin-top: 12px;
@@ -36,7 +36,7 @@ hr.wd-light-gray-hr{
     border-collapse: collapse;
 }
 
-.wd-bookmarked-tuit{
+.wd-bookmarked-tweets{
     border: 2px solid rgb(47, 51, 54);
     margin-left: 16px;
     margin-right: 16px;
@@ -54,16 +54,16 @@ hr.wd-light-gray-hr{
     display: inline-block;
 }
 
-.wd-tuit-body{
+.wd-tweet-body{
     display: inline-block;
     margin: 12px;
 }
 
-.wd-tuit-header{
+.wd-tweet-header{
     color: white;
 }
 
-.wd-tuit-content{
+.wd-tweet-content{
     color: white;
     font-size: 15px;
     max-width: 506px;
@@ -79,7 +79,7 @@ hr.wd-light-gray-hr{
     color: lightgray;
 }
 
-.wd-tuit-image-container{
+.wd-tweet-image-container{
     margin-top: 12px;
     width: 506px;
     border: 1px solid lightgray;
@@ -89,7 +89,7 @@ hr.wd-light-gray-hr{
     border-bottom-left-radius: 20px;
 }
 
-.wd-tuit-image{
+.wd-tweet-image{
     height: 256px;
     width: 504px;
     border: 1px solid lightgray;
@@ -97,19 +97,19 @@ hr.wd-light-gray-hr{
     border-top-left-radius: 20px;
 }
 
-.wd-tuit-image-caption{
+.wd-tweet-image-caption{
     font-size: 15px;
     color: white;
     padding: 12px;
 }
 
-.wd-tuit-metrics{
+.wd-tweet-metrics{
     color: lightgray;
     clear: both;
     margin-top: 12px;
 }
 
-.wd-tuit-metric{
+.wd-tweet-metric{
     display: inline-block;
     color: lightgray;
     width: 25%;
@@ -131,6 +131,6 @@ hr.wd-light-gray-hr{
     color: lightgray;
 }
 
-.wd-liked-tuit{
+.wd-liked-tweet{
     color: red;
 }

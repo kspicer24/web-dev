@@ -13,7 +13,7 @@ const WhoToFollowListItem = ({
                 <div className={`wd-wtf-user`}>
                     <img
                         src={who.avatarIcon}
-                        className={`wd-wtf-image`}/>
+                        className={`wd-wtf-avatar`}/>
                     <div className={`wd-wtf-user-info`}>
                         <span><b>{who.userName}</b></span>
                         <i className={`fas fa-check-circle wd-check`}/><br/>

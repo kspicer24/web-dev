@@ -8,10 +8,10 @@ const HomeComponent = () => {
             <div className="row">
                 <div className="wd-header">
                     <div className="wd-search-area">
-                        <i className="fas fa-search wd-mag-image"/>
+                        <i className="fas fa-search wd-magnifying-glass"/>
                         <input className="wd-search-bar" type="text" placeholder="Search Twitter"/>
                     </div>
-                    <a href="settings.html"><i className="fa fa-cog wd-settings-icon"/></a>
+                    <a href="settings.html"><i className="fa fa-cog wd-settings"/></a>
                 </div>
             </div>
             <PostList/>
