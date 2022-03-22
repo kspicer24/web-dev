@@ -42,7 +42,7 @@ const TuitImageComponent = (post) => {
 
 const PostItem = (post) => {
     return (`
-        <div class="wd-bookmarked-tweets">
+        <div class="wd-bookmarked-tweet">
         <img
             src="${post.userPhoto}"
             class="wd-user-image"/>

@@ -85,7 +85,7 @@ const PostItem = (
     }) => {
     return(
         <>
-            <div className="wd-bookmarked-tweets">
+            <div className="wd-bookmarked-tweet">
                 <img
                     src={post.userPhoto}
                     className="wd-user-image"/>
