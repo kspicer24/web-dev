@@ -39,7 +39,7 @@ const NavigationSidebar = (active) => {
                 <span class="d-none d-xl-block wd-nav-title">More</span></a>
 
         </div>
-        <div class="d-grid mt-2 wd-tuit-button">
+        <div class="d-grid mt-2 wd-tweet-button">
             <a href="tweet.html"
                class="btn btn-primary btn-block rounded-pill">
                 Tweet</a>

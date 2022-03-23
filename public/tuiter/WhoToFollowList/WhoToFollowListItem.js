@@ -4,14 +4,14 @@ const WhoToFollowListItem = (who) => {
             <div class="wd-wtf-user">
                 <img
                     src=${who.avatarIcon}
-                    class="wd-wtf-image"/>
+                    class="wd-wtf-avatar"/>
                 <div class="wd-wtf-user-info">
                     <span><b>${who.userName}</b></span>
                     <i class="fas fa-check-circle"></i> <br/>
                     <span>${who.handle}</span>
                 </div>
             </div>
-            <button class="btn wd-wtf-follow">Follow</button>
+            <button class="btn wd-wtf-follow-button">Follow</button>
         </div>
     `);
 }
