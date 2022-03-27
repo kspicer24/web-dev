@@ -1,5 +1,5 @@
 import React from "react";
-import PostList from "../PostList";
+import TuitList from "../TuitList";
 import "./home.css";
 
 const HomeComponent = () => {
@@ -14,7 +14,7 @@ const HomeComponent = () => {
                     <a href="settings.html"><i className="fa fa-cog wd-settings"/></a>
                 </div>
             </div>
-            <PostList/>
+            <TuitList/>
         </>
     );
 }

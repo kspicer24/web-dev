@@ -20,7 +20,7 @@ const WhoToFollowListItem = ({
                         <span>{`@${who.handle}`}</span>
                     </div>
                 </div>
-                <button className={` wd-wtf-follow`}>Follow</button>
+                <button className={`wd-wtf-follow-button`}>Follow</button>
             </div>
         </>
     )

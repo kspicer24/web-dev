@@ -178,6 +178,7 @@ hr.wd-light-gray-hr{
 .wd-tweet-body{
     display: inline-block;
     margin: 12px;
+    width: 100%;
 }
 
 .wd-tweet-header{
@@ -247,6 +248,3 @@ hr.wd-light-gray-hr{
     color: lightgray;
 }
 
-.wd-liked-tweet{
-    color: red;
-}

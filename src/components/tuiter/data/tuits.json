@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "userName": "Elon Musk",
     "userPhoto": "../../images/elon.jpg",
     "handle": "@elonMusk",
@@ -11,9 +12,11 @@
     "imageLink": "netflix.com",
     "comments": "4.2K",
     "retweets": "3.5K",
-    "likes": "37.5K"
+    "likes": 355,
+    "liked": false
   },
   {
+    "id": "2",
     "userName": "New York Post",
     "userPhoto": "../../images/nyp.png",
     "handle": "@nypost",
@@ -25,7 +28,8 @@
     "imageLink": "",
     "comments": "965",
     "retweets": "2.4K",
-    "likes": "4K"
+    "likes": 500,
+    "liked": false
   }
 ]
 

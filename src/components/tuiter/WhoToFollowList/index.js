@@ -1,11 +1,12 @@
 import React from "react";
-import who from "./who.json";
+import {useSelector} from "react-redux";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import "../index.css";
 
 const WhoToFollowList = () => {
+    const who = useSelector(state => state.who);
     return(
-        <>
+        <div className={"container"}>
             <div className={`list-group wd-wtf-section`}>
                 <div className={`list-group-item wd-wtf-item`}>
                     <div className={`wd-wtf-user-info`}>Who to Follow</div>
@@ -15,7 +16,7 @@ const WhoToFollowList = () => {
                     })
                 }
             </div>
-        </>
+        </div>
     );
 }
 

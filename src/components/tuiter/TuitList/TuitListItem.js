@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import TuitStats from "./tuit-stats";
 
 const TuitImageCaption = (
     {
@@ -66,9 +68,9 @@ const TuitImageComponent = (
     )
 }
 
-const PostItem = (
+const TuitListItem = (
     {
-        post =   {
+        tuit = {
             "userName": "New York Post",
             "userPhoto": "../../images/nyp.png",
             "handle": "@nypost",
@@ -83,58 +85,42 @@ const PostItem = (
             "likes": "4K"
         }
     }) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (tuit) => {
+        dispatch({type: 'delete-tuit', tuit})
+    };
+
     return(
         <>
             <div className="wd-bookmarked-tweet">
                 <img
-                    src={post.userPhoto}
+                    src={tuit.userPhoto}
                     className="wd-user-image"/>
                 <div className="wd-tweet-body">
                     <div className="wd-tweet-header">
                 <span className="wd-username">
-                    <span>{post.userName}</span>
+                    <span>{tuit.userName}</span>
                     <span className="fa-stack fa-1x wd-stacked-icons">
                         <i className="fas fa-certificate fa-stack-2x"/>
                         <i className="fas fa-check fa-stack-1x" style={{color: "black"}}/>
                     </span>
-                    <span className="wd-user-handle">{post.handle}</span>
+                    <span className="wd-user-handle">{tuit.handle}</span>
                 </span>
                     </div>
                     <div className="wd-tweet-content">
-                        {post.body}
+                        {tuit.body}
                     </div>
-                    {post.image &&
-                        <TuitImageComponent post={post}/>
+                    {tuit.image &&
+                        <TuitImageComponent post={tuit}/>
                     }
-                    <div className="wd-tweet-metrics">
-                        <div className="wd-tweet-metric">
-                            <a href="#" className="wd-no-underline">
-                                <i className="fa fa-comment wd-silver"/>
-                                <span className="wd-light-gray-color">{post.comments}</span>
-                            </a>
-                        </div>
-                        <div className="wd-tweet-metric">
-                            <a href="#" className="wd-no-underline">
-                                <i className="fa fa-retweet wd-silver"/>
-                                <span className="wd-light-gray-color">{post.retweets}</span>
-                            </a>
-                        </div>
-                        <div className="wd-tweet-metric">
-                            <a href="#" className="wd-no-underline">
-                                <i className="fas fa-heart" style={{color: "red"}}/>
-                                <span className="wd-light-gray-color">{post.likes}</span>
-                            </a>
-                        </div>
-                        <div className="wd-tweet-metric">
-                            <a href="#" className="wd-no-underline wd-silver">
-                                <i className="fa fa-share"/>
-                            </a>
-                        </div>
-                    </div>
+                    <TuitStats tuit={tuit}/>
                 </div>
+                <i onClick={() =>
+                        deleteTuit(tuit)}
+                   className={"fas fa-times wd-delete-tweet"}/>
             </div>
         </>
     )
 }
 
-export default PostItem;
+export default TuitListItem;

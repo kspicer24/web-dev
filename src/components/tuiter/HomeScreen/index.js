@@ -3,10 +3,16 @@ import NavigationSidebar from "../NavigationSidebar";
 import HomeComponent from "./HomeComponent";
 import PostSummaryList from "../PostSummaryList";
 import "./home.css";
+import TuitList from "../TuitList";
+import WhatsHappening from "../WhatsHappening";
 
 const Index = () => {
     return (
-        <div className="row mt-2 flex-nowrap wd-main-content">
+        <div>
+            <WhatsHappening/>
+            <TuitList/>
+        </div>
+        /*<div className="row mt-2 flex-nowrap wd-main-content">
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                 <NavigationSidebar active={"home"}/>
             </div>
@@ -16,7 +22,7 @@ const Index = () => {
             <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <PostSummaryList/>
             </div>
-        </div>
+        </div>*/
     );
 }
 

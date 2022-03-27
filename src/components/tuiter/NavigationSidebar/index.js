@@ -11,7 +11,7 @@ const NavigationSidebar = (
             <div className="list-group wd-bottom-margin wd-no-wrap-text">
                 <Link to={"/"} className="list-group-item list-group-item-action wd-navigation-item" href="/">
                     <i className="fab fa-twitter"/></Link>
-                <Link to={"/tuiter/home"} className={`list-group-item list-group-item-action wd-navigation-item ${active === "home" ? "active" : ""}`} id="home" href="../HomeScreen/home.html">
+                <Link to={"/tuiter"} className={`list-group-item list-group-item-action wd-navigation-item ${active === "home" ? "active" : ""}`} id="home" href="../HomeScreen/home.html">
                     <i className="fas fa-home"/>
                     <span className="d-none d-xl-block wd-nav-title">Home</span></Link>
                 <Link to={"/tuiter/explore"} className={`list-group-item list-group-item-action wd-navigation-item ${active === "explore" ? "active" : ""}`} id="explore" href="../ExploreScreen/explore.html">
