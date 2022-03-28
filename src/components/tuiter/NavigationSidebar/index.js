@@ -2,10 +2,7 @@ import React from "react";
 import "../index.css";
 import {Link} from "react-router-dom";
 
-const NavigationSidebar = (
-    {
-        active='explore'
-    }) => {
+const NavigationSidebar = (active) => {
     return(
         <>
             <div className="list-group wd-bottom-margin wd-no-wrap-text">

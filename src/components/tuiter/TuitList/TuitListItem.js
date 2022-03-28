@@ -2,67 +2,44 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
 
-const TuitImageCaption = (
-    {
-        post =   {
-            "userName": "New York Post",
-            "userPhoto": "../../images/nyp.png",
-            "handle": "@nypost",
-            "time": "23h",
-            "body": "Grimes seen reading Karl Marx following split with world's richest man Elon Musk trib.al/nx2Gfaq",
-            "image": "../../images/grimes.jpg",
-            "imageTitle": "",
-            "imageBody": "",
-            "imageLink": "",
-            "comments": "965",
-            "retweets": "2.4K",
-            "likes": "4K"
-        }
-    }) => {
-    return(
-        <>
-            <div className="wd-tweet-image-caption">
-                {post.imageTitle &&
-                    <span><b>{post.imageTitle}</b><br/></span>
-                }
-                {post.imageBody &&
-                    <span className="wd-light-gray-color">{post.imageBody}<br/></span>
-                }
-                {post.imageLink &&
-                    <>
-                        <i className="wd-detail fa fa-link"/>
-                        <span className="wd-detail">{post.imageLink}</span>
-                    </>
-                }
-            </div>
-        </>
-    )
-}
-
 const TuitImageComponent = (
     {
-        post =   {
-            "userName": "New York Post",
-            "userPhoto": "../../images/nyp.png",
-            "handle": "@nypost",
-            "time": "23h",
-            "body": "Grimes seen reading Karl Marx following split with world's richest man Elon Musk trib.al/nx2Gfaq",
-            "image": "../../images/grimes.jpg",
-            "imageTitle": "",
-            "imageBody": "",
-            "imageLink": "",
-            "comments": "965",
-            "retweets": "2.4K",
-            "likes": "4K"
+        tuit =     {
+            "_id": "123",
+            "topic": "Web Development",
+            "postedBy": {
+                "username": "ReactJS"
+            },
+            "liked": true,
+            "verified": false,
+            "handle": "ReactJS",
+            "time": "2h",
+            "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+            "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+
+            "logo-image": "../../../images/react-blue.png",
+            "avatar-image": "../../../images/react-blue.png",
+            "stats": {
+                "comments": 123,
+                "retuits": 234,
+                "likes": 345
+            }
         }
     }) => {
     return(
         <div className="wd-tweet-image-container">
-            <img
-                src={post.image}
-                className="wd-tweet-image"/>
-            {(post.imageBody || post.imageTitle || post.imageLink) &&
-                <TuitImageCaption post={post}/>
+            {tuit.attachments.image &&
+                <img
+                    src={tuit.attachments.image}
+                    className="wd-tweet-image"/>
+            }
+            {tuit.attachments.video &&
+                <iframe width="100%" height="350px"
+                        src={`https://www.youtube.com/embed/${tuit.attachments.video}`}
+                        title="Video Player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen/>
             }
         </div>
     )
@@ -70,19 +47,28 @@ const TuitImageComponent = (
 
 const TuitListItem = (
     {
-        tuit = {
-            "userName": "New York Post",
-            "userPhoto": "../../images/nyp.png",
-            "handle": "@nypost",
-            "time": "23h",
-            "body": "Grimes seen reading Karl Marx following split with world's richest man Elon Musk trib.al/nx2Gfaq",
-            "image": "../../images/grimes.jpg",
-            "imageTitle": "",
-            "imageBody": "",
-            "imageLink": "",
-            "comments": "965",
-            "retweets": "2.4K",
-            "likes": "4K"
+        tuit =     {
+            "_id": "123",
+            "topic": "Web Development",
+            "postedBy": {
+                "username": "ReactJS"
+            },
+            "liked": true,
+            "verified": false,
+            "handle": "ReactJS",
+            "time": "2h",
+            "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+            "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "attachments": {
+                "video": "unKvMC3Y1kI"
+            },
+            "logo-image": "../../../images/react-blue.png",
+            "avatar-image": "../../../images/react-blue.png",
+            "stats": {
+                "comments": 123,
+                "retuits": 234,
+                "likes": 345
+            }
         }
     }) => {
     const dispatch = useDispatch();
@@ -94,24 +80,24 @@ const TuitListItem = (
         <>
             <div className="wd-bookmarked-tweet">
                 <img
-                    src={tuit.userPhoto}
+                    src={tuit["avatar-image"]}
                     className="wd-user-image"/>
                 <div className="wd-tweet-body">
                     <div className="wd-tweet-header">
-                <span className="wd-username">
-                    <span>{tuit.userName}</span>
-                    <span className="fa-stack fa-1x wd-stacked-icons">
-                        <i className="fas fa-certificate fa-stack-2x"/>
-                        <i className="fas fa-check fa-stack-1x" style={{color: "black"}}/>
-                    </span>
-                    <span className="wd-user-handle">{tuit.handle}</span>
-                </span>
+                        <span className="wd-username">
+                            <span>{tuit.postedBy.username}</span>
+                            <span className="fa-stack fa-1x wd-stacked-icons">
+                                <i className="fas fa-certificate fa-stack-2x"/>
+                                <i className="fas fa-check fa-stack-1x" style={{color: "black"}}/>
+                            </span>
+                            <span className="wd-user-handle">@{tuit.handle}</span>
+                        </span>
                     </div>
                     <div className="wd-tweet-content">
-                        {tuit.body}
+                        {tuit.tuit}
                     </div>
-                    {tuit.image &&
-                        <TuitImageComponent post={tuit}/>
+                    {tuit.attachments &&
+                        <TuitImageComponent tuit={tuit}/>
                     }
                     <TuitStats tuit={tuit}/>
                 </div>

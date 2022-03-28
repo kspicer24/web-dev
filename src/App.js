@@ -5,7 +5,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HelloWorld from "./components";
 import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
-import ExploreScreen from "./components/tuiter/ExploreScreen";
+import ExploreComponent from "./components/tuiter/ExploreScreen/ExploreComponent";
 import HomeScreen from "./components/tuiter/HomeScreen";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                           <Route index
                                  element={<HomeScreen/>}/>
                           <Route path="explore"
-                                 element={<ExploreScreen/>}/>
+                                 element={<ExploreComponent/>}/>
                       </Route>
                   </Route>
               </Routes>
