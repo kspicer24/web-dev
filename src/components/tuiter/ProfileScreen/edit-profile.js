@@ -59,7 +59,7 @@ const EditProfileScreen = (props) => {
             </div>
             <div>
                 <img
-                    src={"../../../images/elon.jpg"}
+                    src={"https://imgc.artprintimages.com/img/print/the-tree-square-bw-2_u-l-q12ulvo0.jpg?artPerspective=n"}
                     className={'wd-p-avatar'}/>
                 <button onClick={handleSave} className={'btn wd-p-edit-btn'}>Save</button>
             </div>
@@ -85,7 +85,7 @@ const EditProfileScreen = (props) => {
                             className={'wd-p-input'}
                             onChange={e => setBio(e.target.value)}
                         />
-                </div>p
+                </div>
                 <div className={'wd-p-bio-name-input'}>
                     <label for={'bday'} className={'wd-p-label'}>Birthday</label>
                     <input

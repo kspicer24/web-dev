@@ -19,7 +19,7 @@ const WhatsHappening = () => {
     return (
         <div>
             <img
-                src={"../../images/nyp.png"}
+                src={"https://imgc.artprintimages.com/img/print/the-tree-square-bw-2_u-l-q12ulvo0.jpg?artPerspective=n"}
                 className="wd-active-user-image"/>
             <div className={'wd-wh-main row'}>
                 <textarea className={'wd-tuit-input'}
