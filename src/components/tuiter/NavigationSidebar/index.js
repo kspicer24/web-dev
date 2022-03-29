@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const NavigationSidebar = (active) => {
     return(
@@ -8,10 +8,10 @@ const NavigationSidebar = (active) => {
             <div className="list-group wd-bottom-margin wd-no-wrap-text">
                 <Link to={"/"} className="list-group-item list-group-item-action wd-navigation-item" href="/">
                     <i className="fab fa-twitter"/></Link>
-                <Link to={"/tuiter"} className={`list-group-item list-group-item-action wd-navigation-item ${active === "home" ? "active" : ""}`} id="home" href="../HomeScreen/home.html">
+                <Link to="/tuiter" className={`list-group-item list-group-item-action wd-navigation-item ${active === 'home' ? 'active' : ''}`} id="home" href="../HomeScreen/home.html">
                     <i className="fas fa-home"/>
                     <span className="d-none d-xl-block wd-nav-title">Home</span></Link>
-                <Link to={"/tuiter/explore"} className={`list-group-item list-group-item-action wd-navigation-item ${active === "explore" ? "active" : ""}`} id="explore" href="../ExploreScreen/explore.html">
+                <Link to="/tuiter/explore" className={`list-group-item list-group-item-action wd-navigation-item ${active === 'explore' ? 'active' : ''}`} id="explore" href="../ExploreScreen/explore.html">
                     <i className="fas fa-hashtag"/>
                     <span className="d-none d-xl-block wd-nav-title">Explore</span></Link>
                 <Link to={"/tuiter/notifications"} className={`list-group-item list-group-item-action wd-navigation-item +${active === "notifications" ? "active" : ""}`} id="notifications" href="../notifications.html">

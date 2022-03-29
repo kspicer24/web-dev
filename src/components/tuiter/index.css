@@ -230,3 +230,106 @@ body{
 .wd-red{
     color: red;
 }
+.wd-p-header{
+    display: flex;
+    margin-top: 6px;
+    width: 100%;
+}
+.wd-p-arrow-left{
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    align-items:  center;
+}
+.wd-p-header-info{
+}
+.wd-p-header-name{
+    font-size: 30px;
+}
+.wd-p-header-detail{
+    color: gray;
+}
+.wd-p-banner{
+    width: 100%;
+    margin-top: 10px;
+}
+.wd-p-avatar{
+    height: 150px;
+    border-radius: 75px;
+    border: solid black 4px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 75px;
+    margin-bottom: -75px;
+}
+.wd-p-edit-btn{
+    float: right;
+    color: silver;
+    font-size: 14px;
+    border-radius: 20px;
+    border-color: rgb(74, 74, 74);
+    position: relative;
+    top: 10px;
+    margin-right: 20px;
+}
+.wd-p-bio-section{
+    margin-left: 20px;
+}
+.wd-p-bio-name{
+    font-size: 26px;
+}
+.wd-p-bio-handle {
+    color: rgb(74, 74, 74);
+}
+.wd-p-details{
+    margin-top: 10px;
+    display: flex;
+    font-size: 14px;
+}
+.wd-p-detail{
+    color: rgb(74, 74, 74);
+    display: flex;
+    padding-right: 20px;
+}
+.wd-p-detail-icon{
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+}
+.wd-p-tweet-stats{
+    margin-top: 10px;
+    color: silver;
+}
+.wd-p-follow-stat{
+    padding-right: 20px;
+}
+.wd-p-edit-banner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 90px;
+    width: 15%;
+    left: 42%;
+}
+.wd-p-flex{
+    display: flex;
+}
+.wd-p-input{
+    background-color: black;
+    color: silver;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+.wd-p-label{
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+}
+.wd-p-bio-name-input{
+    margin-top: 20px;
+    background-color: black;
+    border: solid rgb(74, 74, 74) 2px;
+    color: silver;
+    width: 95%;
+    padding: 10px;
+}
