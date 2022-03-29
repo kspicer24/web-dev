@@ -6,7 +6,7 @@ import "../index.css";
 const WhoToFollowList = () => {
     const who = useSelector(state => state.who);
     return(
-        <div className={"container"}>
+        <div>
             <div className={`list-group wd-wtf-section`}>
                 <div className={`list-group-item wd-wtf-item`}>
                     <div className={`wd-wtf-user-info`}>Who to Follow</div>

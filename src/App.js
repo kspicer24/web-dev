@@ -7,6 +7,7 @@ import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
 import ExploreComponent from "./components/tuiter/ExploreScreen/ExploreComponent";
 import HomeScreen from "./components/tuiter/HomeScreen";
+import ProfileScreen from "./components/tuiter/ProfileScreen";
 
 function App() {
   return (
@@ -19,11 +20,13 @@ function App() {
                              element={<Labs/>}/>
                       <Route path="hello"
                              element={<HelloWorld/>}/>
-                      <Route path="tuiter" element={<Tuiter/>}>
+                      <Route path="tuiter/" element={<Tuiter/>}>
                           <Route index
                                  element={<HomeScreen/>}/>
                           <Route path="explore"
                                  element={<ExploreComponent/>}/>
+                          <Route path="profile"
+                                 element={<ProfileScreen/>}/>
                       </Route>
                   </Route>
               </Routes>
