@@ -69,12 +69,10 @@ const TuitListItem = (
                 "retuits": 234,
                 "likes": 345
             }
-        }
+        },
+        deleteTuit
     }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
 
     return(
         <>
@@ -102,7 +100,7 @@ const TuitListItem = (
                     <TuitStats tuit={tuit}/>
                 </div>
                 <i onClick={() =>
-                        deleteTuit(tuit)}
+                        deleteTuit(dispatch, tuit)}
                    className={"fas fa-times wd-delete-tweet"}/>
             </div>
         </>
