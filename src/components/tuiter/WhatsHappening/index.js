@@ -1,21 +1,14 @@
 import React, {useState} from "react";
 import "../index.css";
 import {useDispatch} from "react-redux";
+import { createTuit } from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
-        = useState('');
+        = useState({tuit: '', postedBy: { username: "NASA" }, likes: 0});
 
     const dispatch = useDispatch();
 
-    const tuitClickHandler = () => {
-        const action = {
-            type: 'create-tuit',
-            tuit: whatsHappening
-        };
-        dispatch(action);
-        setWhatsHappening('');
-    }
     return (
         <div>
             <img
@@ -23,10 +16,10 @@ const WhatsHappening = () => {
                 className="wd-active-user-image"/>
             <div className={'wd-wh-main row'}>
                 <textarea className={'wd-tuit-input'}
-                            value={whatsHappening}
+                            value={whatsHappening.tuit}
                             placeholder="What's happening?"
                             onChange={(event) =>
-                                setWhatsHappening(event.target.value)}>
+                                setWhatsHappening({...whatsHappening, tuit: event.target.value})}>
                 </textarea>
                 <div className={'wd-wh-buttons'}>
                     <div className={'wd-wh-add-ons'}>
@@ -36,7 +29,8 @@ const WhatsHappening = () => {
                         <i className="far fa-calendar wd-wh-add-on"/>
                     </div>
                     <button className={'wd-write-tuit'}
-                            onClick={tuitClickHandler}>
+                            onClick={() =>
+                                createTuit(dispatch, whatsHappening)}>
                             Tuit
                     </button>
                 </div>
