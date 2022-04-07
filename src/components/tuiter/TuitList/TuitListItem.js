@@ -78,7 +78,7 @@ const TuitListItem = (
         <>
             <div className="wd-bookmarked-tweet">
                 <img
-                    src={tuit["avatar-image"]}
+                    src={tuit["avatar-image"] ? tuit["avatar-image"] : "../../images/elon.jpg"}
                     className="wd-user-image"/>
                 <div className="wd-tweet-body">
                     <div className="wd-tweet-header">
