@@ -5,7 +5,7 @@ import { createTuit } from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
-        = useState({tuit: '', postedBy: { username: "NASA" }, likes: 0});
+        = useState({tuit: '', postedBy: { username: "NASA" }, likes: 0, dislikes: 0});
 
     const dispatch = useDispatch();
 
